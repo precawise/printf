@@ -1,13 +1,12 @@
 #include "main.h"
 
+void print_buffer(char buffer[], int *buff_ind);
+
 /**
- * _printf - Produces output according to a format
- * @format: Is a character string. The format string
- * is composed of zero or more directives
- *
- * Return: The number of characters printed (excluding
- * the null byte used to end output to strings)
- **/
+ * _printf - Printf function
+ * @format: format.
+ * Return: Printed chars.
+ */
 int _printf(const char *format, ...)
 {
 	int i, printed = 0, printed_chars = 0;
